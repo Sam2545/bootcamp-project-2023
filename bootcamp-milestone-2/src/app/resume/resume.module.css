@@ -1,0 +1,66 @@
+.page_title{
+  padding-block: 40px;
+  background-color: #113946;
+  color:#EAD7BB;
+  width: 100%;
+  text-align: center;
+  border:5px solid #EAD7BB;
+  border-radius: 15px;
+}
+
+.header {
+  text-align: center;
+}
+
+.section_title {
+    display:inline-flex;
+    border: 5px solid #EAD7BB;
+    padding: 7px;
+    border-radius:10px;
+  }
+  
+  .course_list > li{
+    padding-block: 10px;
+    font-size: 20px;
+  }
+  
+  .section {
+    color: #113946;
+  }
+  
+  .entry {
+    padding: 5px;
+  }
+  
+  .btn {
+    background-color: #113946;
+    border: none;
+    color: #BCA37F;
+    padding: 12px 30px;
+    cursor: pointer;
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+  /* CSS for contact.html */
+  
+  .label {
+    display: block;
+    margin-bottom: 8px;
+    font-family: Georgia;
+    font-weight: bold;
+    color: #113946;
+    font-size:20px;
+  }
+  /*
+  .input[type="text"],
+  input[type="email"],
+  textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    resize: none;
+  }*/
+  

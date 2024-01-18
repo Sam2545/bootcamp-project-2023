@@ -1,0 +1,39 @@
+.label {
+    display: block;
+    margin-bottom: 8px;
+    font-family: Georgia;
+    font-weight: bold;
+    color: #113946;
+    font-size:20px;
+  }
+
+  .background {
+    color: #EAD7BB;
+  }
+  
+  .input,
+  .textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    resize: none;
+  }
+  
+  /* Add some spacing to the form */
+  .form {
+    width: 500px;
+    margin: 0 auto;
+  }
+
+  .page_title{
+    padding-block: 40px;
+    background-color: #113946;
+    color:#EAD7BB;
+    width: 100%;
+    text-align: center;
+    border:5px solid #EAD7BB;
+    border-radius: 15px;
+  }

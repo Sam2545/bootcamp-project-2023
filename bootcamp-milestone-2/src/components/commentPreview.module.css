@@ -1,0 +1,18 @@
+.comment_section{
+    color:#EAD7BB;
+    width: 100%;
+    text-align: left;
+    border:5px solid #BCA37F;
+    margin-bottom: 10px;
+    padding-left: 20px;
+  }
+.user {
+    color: #BCA37F;
+    
+}
+.username{
+    color: black;
+}
+.content {
+    color: #BCA37F;
+}

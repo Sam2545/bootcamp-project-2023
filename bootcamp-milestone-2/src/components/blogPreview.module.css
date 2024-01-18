@@ -1,0 +1,27 @@
+.blog_date {
+    box-align: margin-left;
+  }
+  
+.blog_img {
+height: 10%;
+width: 30%
+}
+
+.post_preview {
+padding-block: 20px;
+margin-bottom: 20px;
+width: 100%;
+text-align: center;
+border:5px solid #EAD7BB;
+border-radius: 15px;
+}
+
+.page_title{
+  padding-block: 40px;
+  background-color: #113946;
+  color:#EAD7BB;
+  width: 100%;
+  text-align: center;
+  border:5px solid #EAD7BB;
+  border-radius: 15px;
+}

@@ -1,0 +1,40 @@
+.index_title {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+  }
+  
+  .about_image_div {
+    align-items: center;
+  }
+  
+  .about_image{
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+    width:200px;
+    height:400px;
+    padding: 5px;
+    border: 8px solid #113946;
+    background-color: #e6e6e6;
+  }
+  
+  .about_text {
+    background-color: #EAD7BB;
+    padding: 30px;
+    margin: 20px;
+    align-items: center;
+    border-radius: 15px;
+  }
+  .h2_about_text{
+    align-self: center;
+  }
+
+  .page_title{
+    padding-block: 40px;
+    background-color: #113946;
+    color:#EAD7BB;
+    width: 100%;
+    text-align: center;
+    border:5px solid #EAD7BB;
+    border-radius: 15px;
+  }
+  

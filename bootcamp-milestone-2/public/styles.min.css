@@ -1,0 +1,266 @@
+html {
+  height: 100%;
+}
+
+body {
+  background-color: #FFF2D8;
+  position: relative;
+  min-height: 100vh;
+  padding: 0;
+  margin: 0;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+main {
+  padding: 0 20px 40px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* CSS for navigation bar */
+
+.navbar {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  height: 7%;
+  z-index: 10;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+
+  background-color: #BCA37F;
+  color: white;
+  padding: 0px 0px;
+
+  /* Debug border */
+  /* border: solid red; */
+}
+
+.nav-list {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  right: 30px;
+  list-style: none;
+}
+
+.navbar a {
+  color: black;
+  font-weight: bold;
+  font-family: 'Courier New', Courier, monospace;
+  margin: 0 12px;
+  text-decoration: none;
+  letter-spacing: 2px;
+}
+
+
+/* CSS for logo on navbar */
+.logo {
+
+  border: 5px solid transparent;
+  border-image: linear-gradient(to bottom right, #b827fc 0%, #2c90fc 25%, #b8fd33 50%, #fec837 75%, #fd1892 100%);
+  border-radius: 25px;
+  border-image-slice: 1;
+  padding: 10px;
+}
+
+.logo a {
+  text-align: center;
+}
+
+/* CSS for index.html */
+
+.index-title {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.about-image-div {
+  align-items: center;
+}
+
+.about-image{
+  display:block;
+  margin-left: auto;
+  margin-right: auto;
+  width:200px;
+  height:400px;
+  padding: 5px;
+  border: 8px solid #113946;
+  background-color: #e6e6e6;
+}
+
+.about-text {
+  background-color: #EAD7BB;
+  padding: 30px;
+  margin: 20px;
+  align-items: center;
+  border-radius: 15px;
+}
+h2.about-text{
+  align-self: center;
+}
+
+/* CSS for portfolio.html */
+
+.page-title{
+  padding-block: 40px;
+  background-color: #113946;
+  color:#EAD7BB;
+  width: 100%;
+  text-align: center;
+  border:5px solid #EAD7BB;
+  border-radius: 15px;
+}
+
+table{
+  width: 100%;
+  border-collapse: collapse;
+  border-radius: 10px;
+
+}
+
+
+
+td{
+  width:33%;
+  border: 8px solid;
+  border-color: #113946;
+  background-color: #EAD7BB;
+}
+
+.table-row-portfolio{
+  border-color: #113946;
+  border:5px solid;
+  width: 100%;
+
+}
+
+.project-name, .project-description {
+  text-align: center;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  margin: 10px;
+}
+
+.project-name {
+  font-weight:bold;
+  font-size:25px;
+}
+
+.project-details {
+  margin:10px;
+}
+
+a.project-link:link {
+  color: black;
+  text-decoration: none;
+}
+
+a.project-link:visited {
+  color: black;
+  text-decoration: none;
+}
+
+.project-details-image {
+  width: 100%;
+  height: 100%;
+}
+
+/* CSS for resume.html */
+
+.section-title {
+  display:inline-flex;
+  border: 5px solid #EAD7BB;
+  padding: 7px;
+  border-radius:10px;
+}
+
+.course-list > li{
+  padding-block: 10px;
+  font-size: 20px;
+}
+
+.section {
+  color: #113946;
+}
+
+.entry {
+  padding: 5px;
+}
+
+.btn {
+  background-color: #113946;
+  border: none;
+  color: #BCA37F;
+  padding: 12px 30px;
+  cursor: pointer;
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+/* CSS for contact.html */
+
+label {
+  display: block;
+  margin-bottom: 8px;
+  font-family: Georgia;
+  font-weight: bold;
+  color: #113946;
+  font-size:20px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  resize: none;
+}
+
+/* Add some spacing to the form */
+form {
+  width: 500px;
+  margin: 0 auto;
+}
+
+/* CSS for page footer */
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #BCA37F;
+  color: white;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 2.5rem;
+}
+
+/* CSS for blog pages */
+
+.blog-date {
+  box-align: margin-left;
+}
+
+.blog-img {
+  height: 10%;
+  width: 30%
+}
+
+.post-preview {
+  padding-block: 20px;
+  margin-bottom: 20px;
+  width: 100%;
+  text-align: center;
+  border:5px solid #EAD7BB;
+  border-radius: 15px;
+}
