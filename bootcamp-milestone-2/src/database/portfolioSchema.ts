@@ -1,7 +1,10 @@
 import mongoose from "mongoose";
 import { Schema} from "mongoose";
 
-
+export type IComment = {
+    user: string;
+    comment: string,
+}
 // typescript type (can also be an interface)
 type IPortfolio = {
     
@@ -9,6 +12,7 @@ type IPortfolio = {
     slug: string; 
     description: string; // for preview
     image: string; // for preview
+    comments: IComment[];
 };
 
 
@@ -19,6 +23,10 @@ const portfolioSchema = new Schema<IPortfolio>({
     slug: { type: String, required: true },
     description: { type: String, required: true },
     image: { type: String, required: true },
+    comments: [{
+        user: { type: String, required: false },
+        comment: { type: String, required: true },
+    }]
 })
 
 // defining the collection and model
