@@ -9,7 +9,10 @@ type IParams = {
 		}
 }
 
+
+
 export async function POST(req: NextRequest, {params}: IParams) {
+    console.log("hello world");
 	const body = await req.json();
     
 	if (body == null) {

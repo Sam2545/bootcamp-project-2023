@@ -2,6 +2,7 @@ import React from "react";
 import style from "./portfolio.module.css";
 import connectDB from "@/helpers/db";
 import Portfolio from "@/database/portfolioSchema";
+import AddComment from "@/components/addComment";
 
 async function getProjects(){
     await connectDB() // function from db.ts before
