@@ -1,28 +1,31 @@
-"use client"
-import { useState } from "react"
+"use client";
+import { useParams } from "next/navigation";
+import { FormEvent, useState } from "react";
 
 export default function AddComment(slug:any) {
     const [user, setUser] = useState("");
     const [comment, setComment] = useState("");
-    const newSlug = slug.slug
+    const newSlug = slug.slug;
 
-    const submitForm = (event:any) => {
-        console.log("WORKING")
-        event.preventDefault()
+    const params = useParams();
+
+    const submitForm =  async(e:FormEvent) => {
+        console.log("WORKING");
+        e.preventDefault();
         var url;
-        console.log(newSlug.includes("blog"))
+        console.log(newSlug.includes("blog"));
         if (newSlug.includes("blog")){
-            url = "blog/" + slug + "/comment"
-            console.log(url)
+            url = `/api/blog/${params.slug}/comment`;
+            console.log(url);
         }
         else{
-            url = "portfolio/comment"
-            console.log(url)
+            url = "/api/portfolio/comment";
+            console.log(url);
         }
         fetch(url, {
             method: 'POST',
+            body: JSON.stringify({user, comment, slug}),
             headers: { "Content-Type": "application/json" },
-            body: JSON.stringify({user, comment, slug})
         });
         setComment("");
         setUser("");
